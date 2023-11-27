@@ -96,6 +96,24 @@ button:hover {
     background-color: rgb(229, 197, 157);
 }
 
+.book-buttons {
+    display: flex; /* Use flexbox to place buttons in the same line */
+    
+    margin-top: 10px; /* Adjust spacing between book list and buttons */
+}
+
+.book-buttons button {
+    padding: 10px;
+    background-color: rgb(143, 106, 51);
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.book-buttons button:hover {
+    background-color: rgb(229, 197, 157);
+}
 
 
 
