@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Book List</title>
+</head>
+
+
+
+<body >
+    <div class="top-button">
+        <button id="show-formulaire"> New Book</button>
+    </div>
+
+    <div id="container">
+    <h2 id="big-title">Book List</h2>
+
+
+    <div id="list-container">
+        <table id="list-of-books">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Read</th>
+                <th>Date Read</th>
+            </tr>
+    </div>
+    </table>
+
+
+
+
+    
+
+    <form class="book-formulaire">
+        <div id="book">
+            <label for="title">Title</label><br>
+            <input type="text" id="title"><br>
+            <label for="author">Author</label><br>
+            <input type="text" id="author"><br>
+            <label for="category">Category</label><br>
+            <input type="text" id="category"><br>
+            <label for="date">Date of read</label><br>
+            <input type="date" id="date"><br>
+        </div>
+    </form>
+
+
+    
+    <button id="add" onclick={addItem(),display()}> Add Book </button>
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

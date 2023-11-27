@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color: #030303;
+    text-align: center;
+    padding-left: 200px; 
+    padding-right: 200px; 
+}
+
+#container{
+    padding: 20px;
+    border-radius: 50px;
+    margin: 2px;
+    background-color:rgb(230, 178, 114);
+}
+
+.top-button {
+    padding: 20px;
+}
+#show-formulaire {
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+    background-color: rgb(143, 106, 51);
+    color: #fff;
+    border: none;
+    border-radius: 60%;
+    cursor: pointer;
+}
+
+#show-formulaire:hover {
+    background-color: rgb(229, 197, 157);
+}
+
+
+
+#big-title {
+    color: rgb(143, 106, 51);
+}
+
+#list-of-books {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+#list-of-books th,
+#list-of-books td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#list-of-books th {
+    background-color: bisque;
+    color: rgb(143, 106, 51);
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 20%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgb(143, 106, 51);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(229, 197, 157);
+}
+
+.book-formulaire {
+    display: none;
+}
+
+#add {
+    display: none;
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Adjust the margin to your preference */
+    padding: 10px;
+    background-color: rgb(143, 106, 51);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add:hover {
+    background-color: rgb(229, 197, 157);
+}
+
+
+
+
