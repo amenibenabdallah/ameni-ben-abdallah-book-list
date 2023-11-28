@@ -1,4 +1,4 @@
-function MakeBooks(titel, author, category, link, date) {
+function MakeBooks(titel, author, category) {
     var obj = {}
     obj.titel = titel
     obj.author = author
@@ -14,7 +14,7 @@ function MakeBooksList() {
    
     obj.add = addBook
     
-    obj.finishBook=finishBook
+    // obj.finishBook=finishBook
     return obj
 }
 
@@ -24,10 +24,10 @@ var addBook = function (book) {
     this.arrayBooks.push(book)
     
 }
-var finishBook=function(){
+// var finishBook=function(){
     
-        booklist1.arrayBooks.shift()
-    }
+//         booklist1.arrayBooks.shift()
+//     }
 
 //clear button functionality
 $('#clear-list').click(function () {
@@ -73,12 +73,19 @@ $('#clear-list').click(function () {
 
     `)
 })
-
+var aa=booklist1.arrayBooks
 //finish book button functionality
-$('#finish').click(function () {
-    booklist1.finishBook
+function finish () {
+    
+    aa.shift()
+
     display()
-})
+    
+    
+    
+}
+
+
 
 
 
@@ -102,19 +109,24 @@ function addItem() {
 
 
 
+
 function display() {
+    // Clear the existing table content
+    $('#list-of-books').empty().append(`
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+        </tr>
+    `);
+
     for (let i = 0; i < booklist1.arrayBooks.length; i++) {
         $('#list-of-books').append(`
-
-<tr>
-<td>${booklist1.arrayBooks[i].titel}</td>
-<td>${booklist1.arrayBooks[i].author}</td>
-<td>${booklist1.arrayBooks[i].category}</td>
-
-
-</tr>
-
-`)
+            <tr>
+                <td>${booklist1.arrayBooks[i].titel}</td>
+                <td>${booklist1.arrayBooks[i].author}</td>
+                <td>${booklist1.arrayBooks[i].category}</td>
+            </tr>
+        `);
     }
 }
-
